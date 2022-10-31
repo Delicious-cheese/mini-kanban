@@ -1,0 +1,18 @@
+button.ant-btn.ant-btn-primary {
+    background-color: #4EAF7C;
+    border-color: #4EAF7C;
+    transition: 0.5s;
+}
+
+button.ant-btn.ant-btn-primary:hover {
+    opacity: 0.9;
+}
+
+button.ant-btn.ant-btn-default {
+    border-color: #4EAF7C;
+    transition: 0.5s;
+}
+
+button.ant-btn.ant-btn-default:hover {
+    color: #4EAF7C;
+}

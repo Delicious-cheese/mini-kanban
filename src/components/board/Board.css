@@ -1,0 +1,103 @@
+.board {
+    flex: 1;
+    min-width: 800px;
+    height: 100%;
+    background-color: #E1F5FE;
+}
+
+.board .board-header {
+    box-sizing: border-box;
+    height: 60px;
+    padding: 0 10px;
+    font-size: 16px;
+    color: #4EAF7C;
+    font-weight: 600;
+    line-height: 60px;
+    text-align: center;
+}
+
+.board .board-body {
+    height: calc(100% - 60px);
+    box-sizing: border-box;
+    padding: 10px;
+    overflow: scroll;
+    /* background-color: #EFEFEF; */
+    background-color: #E1F5FE;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.board .board-body .column {
+    /* min-width: 250px; */
+    width: clamp(200px, 30%, 300px);
+    /* height: 100px; */
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 1px 1px 2px grey;
+}
+
+.board .board-body .column .column-title {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 15px;
+    position: relative;
+}
+
+.board .board-body .column .column-title img {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.board .board-body .card {
+    box-sizing: border-box;
+    width: 94%;
+    margin: 0 auto;
+    /* background-color: #4EAF7C; */
+    box-shadow: 0 0 5px #CFD8DC;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.1s;
+}
+
+.board .board-body .card:hover {
+    width: 95%;
+
+}
+
+.board .board-body .card .card-content a {
+    cursor: auto;
+}
+
+.board .board-body .card .card-content {
+    width: 60%;
+}
+
+.board .board-body .card .card-content p {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.board .board-body .card .card-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.board .board-body .card .card-btn img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: .5s;
+}
